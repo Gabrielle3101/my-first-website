@@ -1,0 +1,78 @@
+.container{
+    padding: 20px;
+    width: 300px;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    margin-left: 40%;
+    margin-top: 10%;
+    position: relative;
+}
+
+.semi-circle{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(221, 151, 212);
+    border-bottom-left-radius:50px ;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.ball1{
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    border-radius: 50px;
+    position: absolute;
+    top: 20%;
+    right: 50%;
+}
+
+.ball2{
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 20%;
+    left: 40% ;
+    z-index: -1;
+
+}
+
+.staircase{
+    position: relative;
+    border: 1px solid #888;
+    padding: 20px;
+    margin: 20px;
+    width: 500px;
+    height: 600px;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+.box1, .box2, .box3 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.box1 {
+    background-color: rgb(151, 93, 206);
+    left: 20%;
+    top: 20%;
+    z-index: 6;
+}
+
+.box2 {
+    background: rgb(224, 124, 87);
+    left: 30%;
+    top: 30%;
+    z-index: 5;
+}
+
+.box3 {
+    background-color: rgb(129, 165, 231);
+    left: 40%;
+    top: 40%;
+}
