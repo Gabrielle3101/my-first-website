@@ -1,183 +1,306 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabby's Website</title>
-    <link rel="icon" type="image/x-icon" href="/vander-films-aPvB8KMIh5w-unsplash.jpg">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        table {
-        border-collapse: collapse;
-        width: 100%;
-        }
-
-        th, td {
-        text-align: left;
-        padding: 8px;
-        }
-
-        tr:nth-child(even){background-color: #f2f2f2}
-
-        th {
-        background-color: #04AA6D;
-        color: white; 
-            }
-        a.one:visited {color:#0000ff;}
-        a.one:hover {color:#ffcc00;}
-
-        a.two:link {color:#ff0000;}
-        a.two:visited {color:#0000ff;}
-        a.two:hover {font-size:150%;}
-
-        a.three:link {color:#ff0000;}
-        a.three:visited {color:#0000ff;}
-        a.three:hover {background:#66ff66;}
-
-        a.four:link {color:#ff0000;}
-        a.four:visited {color:#0000ff;}
-        a.four:hover {font-family:monospace;}
-
-        a.five:link {color:#ff0000;text-decoration:none;}
-        a.five:visited {color:#0000ff;text-decoration:none;}
-        a.five:hover {text-decoration:underline;}
-
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet">
 </head>
-<body>
-    <!-- Heading Tags -->
-    <h1 style="color: blue;">Divine</h1>
-    <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Cup</h2>
-    <h3 style="color: white;">bag</h3>
-    <h4 style="color: white;">hand</h4>
-    <h5 style="color: white;">thing</h5>
-    <h6 style="color: white;">sand</h6>
-    <div style="background-color:black;color:white;padding:20px;">
-        <h2>London</h2>
-        <p style="color: white;">London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-        <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    <!-- NAVBAR SECTION -->
+    <div class="nav-bar">
+        <div class="section1">
+            <div class="brand-name">BrandName</div>
+            <div class="icons">
+                <img src="/search.svg" alt="" class="search">
+                <img src="/cart.svg" alt="" class="cart">
+                <img src="/menu.svg" alt="" class="menu">
+            </div>
+        </div>
+
+        <div class="nav-links">
+            <p class="navigation">Home</p>
+            <p class="navigation">Product</p>
+            <p class="navigation">Pricing</p>
+            <p class="navigation">Contact</p>
+        </div>
+        <div class="nav-buttons">
+            <p class="login">Login</p>
+            <button class="nav-button">Become A Member <img src="/Vector.svg" alt=""></button>
+        </div>
+
     </div>
-    <div class="sticky">This is sticky</div>
-    <!-- Paragraph Tag -->
-    <p>I love coding</p>
-    <!-- Link Tag -->
-    <a href="https://www.youtube.com/">Go to YouTube</a>
-    <a href="/second.html">View My Second Page</a>
-    <!-- strong and small -->
-    <strong>A bold text</strong>
-    <small>A small text</small>
-    <!-- List -->
-    <h2>Ordered Lists</h2>
-    <ol style="color: white;">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JS</li>
-    </ol>
-    <h2>Unordered Lists</h2>
-    <ul style="color: white;">
-        <li>Html</li>
-        <li>Css</li>
-        <li>js</li>
-    </ul>
-
-    <ol style="color: white;">
-        <li>one</li>
-        <li>two</li>
-        <li>three</li>
-    </ol>
-    <ul style="color: white;">
-        <li>one</li>
-        <li>two</li>
-        <li>three</li>
-    </ul>
-    <h2>A Description Tag</h2>
-    <dl style="color: white;">
-        <dt>coffee</dt>
-        <dd>Hot</dd>
-        <dd>Drink</dd>
-        <dd>Black</dd>
-        <dt>milk</dt>
-        <dd>Warm</dd>
-        <dd>Drink</dd>
-        <dd>Plain</dd>
-    </dl>
-    <!-- Image Tag -->
-    <img src="/vander-films-aPvB8KMIh5w-unsplash.jpg" class="puppy-img" width='300px' alt="puppy" />
-    <!-- button Tag -->
-    <button>Click Me</button>
-    <!-- Form -->
-    <form action="">
-        <input type="text" placeholder="full name"  required/>
-        <input type="number" placeholder="phone number" required>
-        <input type="email" placeholder="your email" required >
-        <input type="password" placeholder="input password" required>
-        <input type="checkbox">
-        <input type="radio">
-        <button type="submit" >Submit</button>
-    </form>
-    <table style="width: 100%;">
-        <caption>HTML TABLES</caption>
-        
-        
-    <table>
-        <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Savings</th>
-        </tr>
-        <tr>
-        <td>Peter</td>
-        <td>Griffin</td>
-        <td>$100</td>
-        </tr>
-        <tr>
-        <td>Lois</td>
-        <td>Griffin</td>
-        <td>$150</td>
-        </tr>
-        <tr>
-        <td>Joe</td>
-        <td>Swanson</td>
-        <td>$300</td>
-        </tr>
-        <tr>
-        <td>Cleveland</td>
-        <td>Brown</td>
-        <td>$250</td>
-    </tr>
-    </table>
-         <p>Mouse over the links and watch them change layout:</p>
-            
-         <p><b><a class="one" href="default.asp" target="_blank">This link changes color</a></b></p>
-         <p><b><a class="two" href="default.asp" target="_blank">This link changes font-size</a></b></p>
-         <p><b><a class="three" href="default.asp" target="_blank">This link changes background-color</a></b></p>
-         <p><b><a class="four" href="default.asp" target="_blank">This link changes font-family</a></b></p>
-         <p><b><a class="five" href="default.asp" target="_blank">This link changes text-decoration</a></b></p>        
-    <div class="fixed">This is fixed</div>     
-    <div class="relative">This is relative</div>
-    <div class="absolute">This is absolute</div>
-    <div class="static">This is static</div>
-
-
-    <div class="float-container">
-        <div class="float-box"> </div>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima commodi quos alias deserunt dolorem. Optio sunt impedit eius expedita laboriosam dolorem, beatae neque sapiente totam, recusandae tempora natus perferendis sint quod. Molestias minus voluptatibus dolor doloribus optio reprehenderit inventore corporis quaerat suscipit debitis dolorum, praesentium, architecto pariatur, cumque laboriosam quia rem consequatur esse? Laborum porro minima cupiditate quaerat ea reprehenderit sit iusto facere voluptatem, necessitatibus consequuntur impedit ducimus. Est, nesciunt voluptas porro ad debitis laboriosam quod illum rem nihil ullam iste consequuntur perspiciatis, vel minima sunt! Rerum asperiores cumque sed et dolore dolor quos, necessitatibus tempora nesciunt eum omnis ad harum repudiandae natus? Architecto obcaecati, inventore autem neque aliquam libero, quidem impedit dolore culpa dolor ullam commodi aut distinctio perspiciatis maiores iste, facilis eius fuga vero eveniet rem eos. Sequi assumenda esse nemo porro placeat! Pariatur, quae non soluta unde ad debitis? Nemo recusandae iste ad quas inventore voluptas dignissimos. Quasi dolores magni sint ipsam. Delectus ratione dolor provident ipsum minima iure minus nobis! Iste nam a porro fugiat recusandae velit ad enim qui similique, eos, officiis aliquam magnam error fugit quo placeat? Velit qui numquam minima perspiciatis ipsam, aliquid quisquam inventore, exercitationem earum quaerat in error rem nostrum itaque.</p>
-        <a href="/position.html"> Learn Positioning</a>
+    <!-- HERO SECTION -->
+    <div class="hero-section">     
+        <div class="hero-main">
+            <div class="hero-heading"><h1>We Ensure A Best <br> Insurance Service</h1></div>
+            <div class="hero-text">We know how large objects will act, <br> but on a small scale</div>
+            <div class="hero-buttons">
+                <div><button class="hero-button1">Get Quote Now</button></div>
+                <div><button class="hero-button2">Learn More</button></div>
+            </div>
+        </div>
     </div>
-    <h2>General Sibling Selector</h2>
-
-<p>The general sibling selector (~) selects all elements that are next siblings of a specified element.</p>
-
-<p>Paragraph 1.</p>
-
-<div>
-  <p>Paragraph 2.</p>
-</div>
-<a href="/blog.html">Go To</a>
-
-<p>Paragraph 3.</p>
-<code>Some code.</code>
-<p>Paragraph 4.</p>
+    <!-- FIRST SECTION -->
+    <div class="first-section">
+        <div class="first-section1">
+            <img class="first-section1-img" src="/first-section1.svg" alt="">
+            <h3 class="first-section1-heading">Peace of Mind</h3>
+            <p class="first-section1-text">So it really behaves like neither. <br> Now we have given up. </p>
+        </div>
+        <div class="first-section2">
+            <img src="/first-section2.svg" alt="" class="first-section2-img">
+            <h3 class="first-section2-heading">Set For Life</h3>
+            <p class="first-sectin2-text">They were used to create the <br> machines that launched.</p>
+        </div>
+        <div class="first-section3">
+            <img src="/first-section3.svg" alt="" class="first-section3-img">
+            <h3 class="first-section3-heading">100% Satisfaction</h3>
+            <p class="first-section3-text">So it really behaves like neither. <br> Now we have given up. </p>
+        </div>
+    </div>
+    <!-- SECOND SECTION -->
+    <div class="second-section">
+        <div class="second-section1">
+            <h1 class="second-section1-heading">Industry</h1>
+            <p class="second-section1-text">Problems trying to resolve the conflict between <br> the two major realms of Classical physics: Newtonian mechanics</p>
+        </div>
+        <div class="comment-cards">
+            <div class="comment1">
+                <img src="/user.1.png" alt="" class="profile1">
+                <h3 class="name1">Regina Miles</h3>
+                <p class="job1">Designer</p>
+                <div class="stars">
+                    <img src="/Gold-star.svg" alt="" class="gold-star">
+                    <img src="/Gold-star.svg" alt="" class="gold-star">
+                    <img src="/Gold-star.svg" alt="" class="gold-star">
+                    <img src="/Gold-star.svg" alt="" class="gold-star">
+                    <img src="/empty-star.svg" alt="" class="empty-star">
+                </div>
+                <p class="testimonial1">This proved to be impossible using the traditional concepts of space and time. Einstein developed a new view of time first and then space. This proved to be impossible using the traditional concepts of space and time. Einstein developed a new view of time first and then space.</p>
+            </div>
+            <div class="comment2">
+                <img src="/user.2.png" alt="" class="profile2">
+                <h3 class="name2">Regina Miles</h3>
+                <p class="job1">Designer</p>
+                <div class="stars">
+                    <img src="/Gold-star.svg" alt="" class="gold-star">
+                    <img src="/Gold-star.svg" alt="" class="gold-star">
+                    <img src="/Gold-star.svg" alt="" class="gold-star">
+                    <img src="/Gold-star.svg" alt="" class="gold-star">
+                    <img src="/empty-star.svg" alt="" class="empty-star">
+                </div>
+                <p class="testimonial2">This proved to be impossible using the traditional concepts of space and time. Einstein developed a new view of time first and then space. This proved to be impossible using the traditional concepts of space and time. Einstein developed a new view of time first and then space.</p>
+            </div>
+        </div>
+    </div>
+    <!-- THIRD SECTION -->
+    <div class="third-section">
+        <div class="third-section1">
+            <h1 class="third-section1-heading">Industry</h1>
+            <p class="third-section1-text">Problems trying to resolve the conflict between <br> the two major realms of Classical physics: Newtonian mechanics</p>
+        </div>
+        <div class="card-gallery">
+            <div class="card1">
+                <h5 class="card-head">Tax Management</h5>
+                <p class="card-content">Life Tips From Top Ten <br> Adventure Travelers</p>
+                <button class="view-project">View Project</button>
+            </div>
+            <div class="card2">
+                <h5 class="card-head">Tax Management</h5>
+                <p class="card-content">Life Tips From Top Ten <br> Adventure Travelers</p>
+                <button class="view-project">View Project</button>
+            </div>
+            <div class="card3">
+                <h5 class="card-head">Tax Management</h5>
+                <p class="card-content">Life Tips From Top Ten <br> Adventure Travelers</p>
+                <button class="view-project">View Project</button>
+            </div>
+            <div class="card4">
+                <h5 class="card-head">Tax Management</h5>
+                <p class="card-content">Life Tips From Top Ten <br> Adventure Travelers</p>
+                <button class="view-project">View Project</button>
+            </div>
+        </div>
+    </div>
+    <!-- FOURTH SECTION -->
+    <div class="fourth-section">
+        <div class="fourth-section1">
+            <h1 class="pricing">Pricing</h1>
+            <p class="pricing-text">Problems trying to resolve the conflict between <br> the two major realms of Classical physics: Newtonian mechanics</p>
+        </div>
+        <div class="price-cards">
+            <div class="free">
+                <h2 class="price-head">FREE</h2>
+                <p class="price-text">Organize across all <br> apps by hand</p>
+                <h1 class="price">0$</h1>
+                <h5 class="duration">Per Month</h5>
+                <button class="tryforfree">Try for free</button>
+                <div class="sucess">
+                    <img src="/tick.svg" alt="" class="green">
+                    <p class="available">Unlimited product updates</p>
+                </div>
+                <div class="sucess">
+                    <img src="/tick.svg" alt="" class="green">
+                    <p class="available">Unlimited product updates</p>
+                </div>
+                <div class="sucess">
+                    <img src="/tick.svg" alt="" class="green">
+                    <p class="available">Unlimited product updates</p>
+                </div>
+                <div class="sucess">
+                    <img src="/tick.svg" alt="" class="gray">
+                    <p class="available">1GB Cloud storage</p>
+                </div>
+                <div class="sucess">
+                    <img src="/tick.svg" alt="" class="gray">
+                    <p class="available">Email and community support</p>
+                </div>
+            </div>
+            <div class="SILVER">
+                <p class="new">New</p>
+                <h2 class="price-head">SILVER</h2>
+                <p class="price-text">Organize across all <br> apps by hand</p>
+                <h1 class="price">9.99$</h1>
+                <h5 class="duration">Per Month</h5>
+                <button class="tryforfree">Try for free</button>
+                <div class="sucess">
+                    <img src="/tick.svg" alt="" class="green">
+                    <p class="available">Unlimited product updates</p>
+                </div>
+                <div class="sucess">
+                    <img src="/tick.svg" alt="" class="green">
+                    <p class="available">Unlimited product updates</p>
+                </div>
+                <div class="sucess">
+                    <img src="/tick.svg" alt="" class="green">
+                    <p class="available">Unlimited product updates</p>
+                </div>
+                <div class="sucess">
+                    <img src="/tick.svg" alt="" class="gray">
+                    <p class="available">1GB Cloud storage</p>
+                </div>
+                <div class="sucess">
+                    <img src="/tick.svg" alt="" class="gray">
+                    <p class="available">Email and community support</p>
+                </div>
+            </div>
+            <div class="GOLD">
+                <h2 class="price-head">GOLD</h2>
+                <p class="price-text">Organize across all <br> apps by hand</p>
+                <h1 class="price">19.99$</h1>
+                <h5 class="duration">Per Month</h5>
+                <button class="tryforfree">Try for free</button>
+                <div class="sucess">
+                    <img src="/tick.svg" alt="" class="green">
+                    <p class="available">Unlimited product updates</p>
+                </div>
+                <div class="sucess">
+                    <img src="/tick.svg" alt="" class="green">
+                    <p class="available">Unlimited product updates</p>
+                </div>
+                <div class="sucess">
+                    <img src="/tick.svg" alt="" class="green">
+                    <p class="available">Unlimited product updates</p>
+                </div>
+                <div class="sucess">
+                    <img src="/tick.svg" alt="" class="gray">
+                    <p class="available">1GB Cloud storage</p>
+                </div>
+                <div class="sucess">
+                    <img src="/tick.svg" alt="" class="gray">
+                    <p class="available">Email and community support</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIFTH SECTION -->
+    <div class="fifth-section">
+        <h5 class="contactus-heading">Contact Us</h5>
+        <h2 class="appointment-head">Make an Appointment</h2>
+        <div class="inputs">
+            <form action="/action_page.php"></form>
+            <input type="text" class="name" placeholder="Full Name *">
+            <input type="email" class="email" placeholder="Email *">
+        </div>
+        <div class="dropdowns">
+            <input type="text" class="gender" placeholder="Please Select">
+            <input type="text" class="time" placeholder="4:00 Available">
+        </div>
+        <div class="message-text">
+            <input type="text" class="message" placeholder="Message">
+        </div>
+        <div class="book">
+            <buttn class="book-app">Book Appointment</buttn>
+        </div>
+    </div>
+    <!-- SIXTH SECTION -->
+    <div class="sixth-section">
+        <div class="left">
+            <h3 class="consult">Consulting Agency For Your Business</h3>
+            <p class="text">the quick fox jumps over the lazy dog</p>
+        </div>
+        <div class="right">
+            <button class="contactus2">Contact Us</button>
+        </div>
+    </div>
+    <!-- FOOTER SECTION -->
+    <div class="footer">
+        <div class="first">
+            <h5 class="first-heading">Company Info</h5>
+            <a href="#" class="first-links">About Us</a>
+            <a href="#" class="first-links">Carrier</a>
+            <a href="#" class="first-links">We are Hiring</a>
+            <a href="#" class="first-links">Blog</a>
+        </div>
+        <div class="second">
+            <h5 class="second-heading">Legal</h5>
+            <a href="#" class="second-links">About Us</a>
+            <a href="#" class="second-links">Carrier</a>
+            <a href="#" class="second-links">We are Hiring</a>
+            <a href="#" class="second-links">Blog</a>
+        </div>
+        <div class="third">
+            <h5 class="third-heading">Features</h5>
+            <a href="#" class="third-links">Business Marketing</a>
+            <a href="#" class="third-links">User Analytic</a>
+            <a href="#" class="third-links">Live Chat</a>
+            <a href="#" class="third-links">Unlimited Support</a>
+        </div>
+        <div class="fourth">
+            <h5 class="fourth-heading">Resources</h5>
+            <a href="#" class="fourth-links">IOS & Android</a>
+            <a href="#" class="fourth-links">Watch a Demo</a>
+            <a href="#" class="fourth-links">Customers</a>
+            <a href="#" class="fourth-links">API</a>
+        </div>
+        <div class="fifth">
+            <h5 class="fifth-heading">Get In Touch</h5>
+            <div class="call">
+                <img src="/call.svg" alt="" class="phone">
+                <h6 class="phone-no">(480) 555-0103</h6>
+            </div>
+            <div class="locate">
+                <img src="/location.svg" alt="" class="location">
+                <h6 class="biz-location">4517 Washington Ave</h6>
+            </div>
+            <div class="mail">
+                <img src="/mail.svg" alt="" class="mail-letter">
+                <h6 class="letter">debra.holt@example.com</h6>
+            </div>
+        </div>
+    </div>
+    <!-- BOTTOM SECTION -->
+    <div class="bottom">
+        <div class="right-bottom">Made With Love By Figmaland. All Rights Reserved.</div>
+        <div class="left-bottom">
+            <div class="facebook"><img src="/facebook.svg" alt="" class="facebook-icon"></div>
+            <div class="instagram"><img src="/instagram.svg" alt="" class="insta-icon"></div>
+            <div class="twitter"><img src="/twitter.svg" alt="" class="twitter-icon"></div>
+        </div>
+    </div>
 </body>
 </html>
-        

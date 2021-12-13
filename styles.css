@@ -1,98 +1,725 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'montserrat alternates';
+    margin: 0;
+    padding: 0;
+}
 
-p {
-    text-align: center;
-    color: red;
+button{
+    font-family: 'montserrat alternates';
 }
-/* This is a comment */
-h2 {
-    background-color: darkcyan;
-    opacity: 0.6;
-}
-body {
-    background-image: url(/vander-films-aPvB8KMIh5w-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-attachment: fixed;
-    background-size: cover;
-}
-h3 {
-    border: 5px solid yellow;
-}
-h4 {
-    margin: 20px;
-}
-h5 {
-    text-shadow:2px 2px 5px red;
-}
-h6 {
-    font-family: cursive;
-    font-style: oblique;
-    font-weight: 500;
-    font-variant: small-caps;
-    font-size: large;
-    }
-li {
-    display: inline;
-    }
-div.fixed {
-    position: fixed;
-    left: 40%;
-    bottom: 0;
-    width: 300px;
-    border: 3px solid #73AD21;
-    background-color: #73AD21 ;
-    color: white;
-}
-div.relative {
-    position: relative;
-    left: 25px;
-    width: 400px;
-    height: 200px;
-    border: 3px solid #84EEED;
-    color: white;
-}
-div.absolute {
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 200px;
-    height: 100px;
-    border: 3px solid #6234ED;
-    color: white;
-}
-div.static {
-    position: static;
-    border: 3px solid #54AADD;
-    color: white;
-}
-div.sticky {
-    position: -webkit-sticky;
+/* ======================== */
+/* NAVBAR STYLES */
+/* ======================== */
+.nav-bar {
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    top: 0;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
     position: sticky;
-    top: 10;
-    padding: 5px;
-    background-color: #e8c6f9;
-    border: 3px solid #e297f3;
+    z-index: 50;
 }
 
-.float-container{
-
-    background-color: white;
-    padding: 50px 20px;
+.icons {
+    display: none;
 }
 
-.float-box{
-    background-color: rgba(63, 63, 114, 0.664);
-    width: 80px;
-    height: 80px;
-    border-radius: 50px;
-    float: right;
+.brand-name {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
 }
 
-.float-container > p {
-    text-align: left;
-    color: #888;
-    clear: right;
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
 }
-div ~ p {
-    font-family: papyrus, serif, arial, helvetica;
-  }
+
+.nav-button {
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #26a6f0;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.nav-button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-around;
+
+}
+.login{
+    margin-right: 10px;
+}
+
+/* ======================== */
+/* HERO STYLES */
+/* ======================== */
+.hero-section {
+    background-image: url('/background4new3.png');
+    color: #ffffff;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+}
+.hero-heading > h1{
+    margin: 0;
+}
+
+
+.navigation:hover, .login:hover {
+    cursor: pointer;
+    color: #26a6f0;
+}
+
+.hero-text{
+    margin: 30px 0;
+}
+.hero-heading {
+    /* width: 599px;
+    height: 160px; */
+    left: 0px;
+    top: 0px;
+    font-weight: 900px;
+    font-size: 30px;
+}
+
+
+.hero-buttons {
+    border: 0;
+    border-radius: 37px;
+    display: flex;
+}
+
+.hero-button1:hover, .hero-button2:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.hero-button1 {
+    color: #ffffff;
+    background-color: #26a6f0;
+    border: 0;
+    border-radius: 37px;
+    padding: 10px 20px;
+    font-size: 15px;
+    width: 187px;
+    height: 52px;
+    margin-right: 10px;
+}
+
+.hero-button2 {
+    color: #ffffff;
+    background-color: transparent ;
+    border-radius: 37px;
+    border: 1px solid white;
+    font-size: 15px;
+    width: 187px;
+    height: 52px;
+}
+
+
+/* ======================== */
+/* FIRST SECTION STYLES */
+/* ======================== */
+.first-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0;
+    padding-top: 50px;
+    background-color: #252b42;
+    width: 100%;
+    color: #ffffff;
+    height: 300px;
+}
+
+.first-section1, .first-section2, .first-section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.first-section1-img, .first-section2-img, .first-section3-img {
+    width: 70px;
+    height: 50px;
+}
+
+/* ======================== */
+/* SECOND SECTION STYLES */
+/* ======================== */
+.second-section {
+    color: #ffffff;
+    background-color: #8ec2f2;
+    margin: 0;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.second-section1 {
+    text-align: center;
+}
+
+.comment-cards {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: #ffffff; */
+}
+
+.comment1, .comment2 {
+    background-color: #ffffff;
+    width: 40%;
+    height: 50%;
+    padding: 30px;
+    margin: 40px;
+}
+
+.name1, .name2 {
+    color: #252b42;
+}
+
+.job1, .testimonial1, .testimonial2 {
+    color: #737373;
+}
+
+.profile1, .profile2 {
+    position: relative;
+    right: 70px;
+}
+/* ======================== */
+/* THIRD SECTION STYLES */
+/* ======================== */
+.third-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #252b42;
+    color: #ffffff;
+    padding: 50px;
+}
+
+.third-section1 {
+    text-align: center;
+}
+
+.card-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 50px;
+    padding: 30px;
+}
+
+.card1 {
+    background-image: url(/post.1.jpg);
+}
+
+.card2 {
+    background-image: url(/post.2.jpg);
+}
+
+.card3 {
+    background-image: url(/post.3.jpg);
+}
+.card4 {
+    background-image: url(/post.4.jpg);
+}
+
+.card1, .card2, .card3, .card4 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+.card-head, .card-content {
+    font-weight: 600;
+}
+
+.view-project {
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #26a6f0;
+    border: 0;
+    border-radius: 37px;
+    padding: 15px 10px;
+}
+.view-project:hover{
+    opacity: 0.5;
+}
+
+/* ======================== */
+/* FOURTH SECTION STYLES */
+/* ======================== */
+.fourth-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #252b42;
+}
+
+.fourth-section1 {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    text-align: center;
+}
+
+.price-cards {
+    display: flex;
+    justify-content:her space-around;
+    flex-wrap: wrap;
+}
+
+.free, .silver, .gold {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    text-align: center;
+}
+
+.green {
+    background-color: #2dc071;
+}
+
+.gray {
+    background-color: #bdbdbd;
+}
+
+.green, .gray {
+    width: 32px;
+    height: 32px;
+    border-radius: 200px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.sucess {
+    display: flex;
+}
+
+.price-texts {
+    color: #737373;
+}
+
+.price {
+    color: #23a6f0;
+}
+
+.duration {
+    color: #8ec2f2;
+}
+
+.available {
+    color: #252b42;
+}
+
+.tryforfree {
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #26a6f0;
+    border: 0;
+    border-radius: 5px;
+    padding: 20px 90px;
+}
+
+.tryforfree:hover {
+    opacity: 0.5;
+}
+
+.silver {
+    position: relative;
+}
+
+.new {
+    position: absolute;
+    background-color: #e77240;
+    color: #ffffff;
+    border-radius: 52px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: calc(50% - 90px/2 + 102px);
+    top: -50px;
+}
+
+/* ======================== */
+/* FIFTH SECTION STYLES */
+/* ======================== */
+
+.fifth-section {
+    background-image: url(/img4new3.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.inputs {
+    margin: 30px;
+}
+
+.name, .email {
+    background: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 250px;
+    height: 50px;
+    color: #737373;
+}
+
+.dropdowns {
+    margin: 30px 0;
+    /* padding: 30px; */
+}
+
+.gender  {
+    background: #F9F9F9;
+    border: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 250px;
+    height: 50px;
+    color: #bdbdbd;
+    margin-left: 30px;
+}
+
+.time {
+    background: #F9F9F9;
+    border: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 250px;
+    height: 50px;
+    color: #bdbdbd;
+}
+
+.message {
+    background: #F9F9F9;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 510px;
+    height: 140px;
+    left: 0px;
+    top: 140px;
+    color: #bdbdbd;
+    margin: 30px;
+}
+
+.contactus-heading, .appointment-head {
+    color: #252b42;
+    margin-left: 30px;
+}
+
+.book-app {
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #26a6f0;
+    border: 0;
+    border-radius: 5px;
+    margin: 30px;
+    padding: 20px 60px;
+}
+
+.book-app:hover {
+    opacity: 0.5;
+}
+
+/* ======================== */
+/* SIXTH SECTION STYLES */
+/* ======================== */
+
+.sixth-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: #fafafa;
+}
+
+.consult {
+    color: #252b42;
+}
+
+.text {
+    color: #737373;
+}
+
+.contactus2 {
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #26a6f0;
+    border: 0;
+    border-radius: 5px;
+    margin: 30px;
+    padding: 20px 60px;
+}
+
+/* ======================== */
+/* FOOTER SECTION STYLES */
+/* ======================== */
+
+.footer {
+    background-color: #252b42;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 50px;
+}
+
+.first, .second, .third, .fourth{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.first-heading, .second-heading, .third-heading, .fourth-heading, .fifth-heading{
+    font-size: 20px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 10px;
+}
+a:hover {
+    cursor: pointer;
+    color: #26a6f0;
+}
+
+.call, .locate, .mail {
+    display: flex;
+}
+
+.phone, .location, .mail-letter {
+    margin: 10px;
+}
+
+/* ======================== */
+/* BOTTOM SECTION STYLES */
+/* ======================== */
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.right-bottom {
+    display: flex;
+    align-items: center;
+    color: #737373;
+}
+
+.left-bottom {
+    display: flex;
+}
+
+.facebook, .instagram, .twitter {
+    margin: 10px;
+}
+
+@media screen  and (max-width:950px){
+    .card-gallery {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .card1, .card2, .card3, .card4 {
+        margin: 20px;
+    }
+    .tryforfree {
+        padding: 10px 10px;
+    }
+}
+@media screen  and (max-width:800px){
+    .nav-bar {
+        background-color: #252b42;
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+        position: static;
+    }
+
+    .section1 {
+        display: flex;
+        justify-content: space-around;
+        position: sticky;
+        top: 0;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .nav-buttons {
+        display: none;
+    }
+
+    .icons {
+        display: unset;
+        margin: 10px;
+    }
+    .search, .cart, .menu {
+        margin: 10px;
+    }
+    .search:hover, .cart:hover, .menu:hover{
+        color: #23a6f0;
+        cursor: pointer;
+    }
+
+    .hero-section {
+        text-align: center;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .hero-heading > h1{
+        font-size: 30px;
+    }
+
+    .first-section {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-size: 100vh 100vw;
+    }
+    .message{
+        margin: 0;
+    }
+    .second-section{
+        padding: 10px;
+    }
+    .card-gallery{
+        margin: 0;
+        padding: 0;
+    }
+    .gender {
+        margin-left: 0;
+    }
+    .comment-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comment1, .comment2 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .profile1, .profile2 {
+        display: none;
+    }
+
+    .price-cards {
+        display: flex;
+        /* width: 60%; */
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .inputs, .dropdowns {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+   .book-app{
+       margin: 0;
+   }
+    .name, .email, .gender, .time, .message, .book-app {
+        margin-bottom: 20px;
+        width: 300px;
+    }
+    .book-app {
+        margin-top: 20px;
+    }
+    .sixth-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+
+    .phone, .location, .mail-letter {
+        background: #23a6f0;
+    } 
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        background-color: #252b42;
+    }
+}
+@media screen  and (max-width:650px){
+    .hero-section {
+        background-position: center;
+        width: 100%;
+        display: flex;
+    }
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+
+    .hero-button1, .hero-button2 {
+        margin: 20px;
+        position: relative;
+    }
+
+    .hero-main {
+        text-align: left;
+    }
+
+    .hero-heading, .hero-text {
+        word-wrap: break-word;
+    }
+
+    .name, .email, .gender, .time, .message {
+        width: 100%;
+    }
+
+    .book {
+        display: flex;
+    }
+}
