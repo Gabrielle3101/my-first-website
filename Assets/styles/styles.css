@@ -68,7 +68,7 @@ button{
 /* HERO STYLES */
 /* ======================== */
 .hero-section {
-    background-image: url('/background4new3.png');
+    background-image: url('/Assets/images/background4new3.png');
     color: #ffffff;
     height: 90vh;
     background-size: cover;
@@ -228,18 +228,18 @@ button{
 }
 
 .card1 {
-    background-image: url(/post.1.jpg);
+    background-image: url(/Assets/images/post.1.jpg);
 }
 
 .card2 {
-    background-image: url(/post.2.jpg);
+    background-image: url(/Assets/images/post.2.jpg);
 }
 
 .card3 {
-    background-image: url(/post.3.jpg);
+    background-image: url(/Assets/images/post.3.jpg);
 }
 .card4 {
-    background-image: url(/post.4.jpg);
+    background-image: url(/Assets/images/post.4.jpg);
 }
 
 .card1, .card2, .card3, .card4 {
@@ -372,7 +372,7 @@ button{
 /* ======================== */
 
 .fifth-section {
-    background-image: url(/img4new3.png);
+    background-image: url(/Assets/images/img4new3.png);
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -681,7 +681,7 @@ a:hover {
     }
 
     .phone, .location, .mail-letter {
-        background: #23a6f0;
+        color: #23a6f0;
     } 
 
     .bottom {
